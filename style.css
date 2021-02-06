@@ -109,7 +109,7 @@ h1:hover {
     color: rgb(97, 151, 202);
 
 }
-p{
+#about{
     text-indent: 30px;
     text-align: left;
     background-color:  #333333;
@@ -123,6 +123,12 @@ p{
     box-shadow: 10px 5px rgb(2, 61, 150);
     font-size: 18px;
     opacity: 0.75;
+}
+#quote{
+    background-color: none;
+    margin-top: 200px;
+    color:lightgoldenrodyellow;
+    text-align: center;
 }
 div.form {
     margin:200px;
