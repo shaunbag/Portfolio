@@ -83,12 +83,18 @@ article {
 
 @media only screen and (max-width: 600px) {
 
+    body{
+        background-color: black;
+        background-image: none;
+    }
+
     article{
-        display: flex;
+
+        display: block;
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
-        padding: 0;
+        padding: 5px;
         overflow: hidden;
         
     }
@@ -101,7 +107,7 @@ article {
         line-height: normal;
         padding: 0;
         font-size: 10px;
-        width:280px;
+        width:250px;
     }
     h1{
         color: azure;
