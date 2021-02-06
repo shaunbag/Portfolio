@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -101,6 +101,7 @@ h1:hover {
 
 #photo:hover{
     box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px  #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
+    animation: colorcycle 5s;
 }
 
 #git {
@@ -122,4 +123,40 @@ p{
     box-shadow: 10px 5px rgb(2, 61, 150);
     font-size: 18px;
     opacity: 0.75;
+}
+div.form {
+    margin:200px;
+    display: block;
+    text-align: center;
+}
+form {
+    color: white;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+textarea {
+    width: 300px;
+    height: 300px;
+}
+
+
+@keyframes colorcycle{
+    0% {
+        filter:hue-rotate(0deg)
+    }
+    25% {
+        filter:hue-rotate(90deg)
+    }
+    50% {
+        filter:hue-rotate(180deg)
+    }
+    75% {
+        filter:hue-rotate(270deg)
+    }
+    100% {
+        filter:hue-rotate(360deg)
+    }
+
 }
