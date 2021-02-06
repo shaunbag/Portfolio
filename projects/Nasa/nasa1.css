@@ -1,0 +1,53 @@
+body {
+    background: rgb(2,0,36);
+    background-image: url(./bioChamber.gif);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(253, 136, 2);
+    
+}
+
+#logo {
+    height:40px;
+    width: 40px;
+}
+
+#mainPage  {
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+div {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+img {
+    border: 2px solid rgb(0, 247, 255);
+    border-radius: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 800px;
+}
+
+#exp {
+    padding: 60px 60px 60px 60px;
+    text-align: left;
+    line-height: 35px;
+    color: rgb(52, 255, 1);
+    background-color: black;
+}   
+
+article {
+    display: flex;
+    margin: 20px;
+    padding-left: 100px;
+}

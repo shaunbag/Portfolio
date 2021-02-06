@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alarm Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Alarmstyle.css">
+</head>
+<body>
+    <h1>Alarm Clock</h1>
+
+    <div>
+        <p id="time"></p>
+
+    </div>
+
+    <div>
+        <form>
+            <h2>Select the Hour of the alarm</h2>
+            <select id="option">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>-
+            </select>
+            <button id="btn" type="button">Set Alarm</button> <!-- button to set alarm -->
+            <button id="stop" >Stop Alarm</button>
+        </form>   
+        <audio id="audio" src=""></audio> <!--audio tag where audio is loaded-->
+    </div>
+
+    <script>
+             
+        function timer(){
+            
+            let time = new Date();                             // create clock function including if statements to add the 0 on numbers less than 10
+            let hours = time.getHours();
+            let minutes = time.getMinutes();
+            let seconds = time.getSeconds();
+            if(minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if(hours < 10) {
+                hours = "0" + hours;
+            }
+            if(seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            document.getElementById('time').innerHTML = hours + ':' + minutes + ':' + seconds;
+        }
+        setInterval(timer, 1000);  // interval to ensure the clock updates each second
+
+        document.getElementById('btn').addEventListener('click', setAlarm); // on click event listener for the button
+
+        function setAlarm(){
+            // console.log('its clicked');
+            let time = new Date();
+            let hours = time.getHours();
+
+           
+           let audio = document.getElementById('audio'); // grab audio tag
+           audio.src = 'alarm.mp3';                      // set audio src
+               audio.loop = true;                         // set audio to loop
+            const e = document.getElementById('option');
+            let alarm = e.options[e.selectedIndex].text;
+            if(alarm == hours) {
+                
+                audio.play();
+                console.log('time is right');
+            }
+        };
+
+        setInterval(setAlarm, 1000);
+
+        document.getElementById('stop').addEventListener('click', stop);
+
+        function stop() {
+            let audio = document.getElementById('audio');
+            audio.pause();
+        }
+
+
+    </script>
+</body>
+
+
+</html>

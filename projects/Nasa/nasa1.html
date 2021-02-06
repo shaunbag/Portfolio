@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nasa picture of the day</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./nasa1.css">
+    </head>
+    <body>
+        
+        <h1>Nasa Picture of the Day</h1>
+        <article>
+            <div id="space">
+
+
+            </div>
+
+            <div id="exp">
+
+            
+            </div>
+        </article>
+
+        
+        
+        <script>
+            
+            const pictureOftheday = async() => {
+    
+                const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=t9ReTvYalL6HpD5jruzod7lmd7RfsLxGc5UnDerT');
+                    try{
+                        if(response.ok){
+                        const data = await response.json();
+                        console.log(data);
+                        creatPic(data);
+                        return data;                       
+                    }
+                    throw new Error('failed');
+                 }catch(error){
+                    console.log(error.message);
+                 }
+                };
+               
+    
+            
+            const creatPic = (data) => {
+
+                document.querySelector('#space').innerHTML += `<img src="${data.url}">`; 
+                document.querySelector('#exp').innerHTML += data.explanation;
+                
+            };
+
+            
+            pictureOftheday();
+            
+        </script>
+    </body>
+</html>
