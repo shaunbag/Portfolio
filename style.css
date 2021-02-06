@@ -109,6 +109,7 @@ h1:hover {
 
 }
 p{
+    text-indent: 30px;
     text-align: left;
     background-color:  #333333;
     color:lightgoldenrodyellow;
