@@ -15,3 +15,8 @@ body {
     margin-right: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    #time {
+        font-size: 60px;
+    }
+}

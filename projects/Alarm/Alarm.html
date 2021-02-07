@@ -18,15 +18,15 @@
         <form>
             <h2>Select the Hour of the alarm</h2>
             <select id="option">
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
                 <option>10</option>
                 <option>11</option>
                 <option>12</option>
@@ -43,16 +43,16 @@
                 <option>23</option>
                 <option>24</option>
             </select>
-            <select id="option2">
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
+            <select id="seconds">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
                 <option>10</option>
                 <option>11</option>
                 <option>12</option>
@@ -137,26 +137,34 @@
         document.getElementById('btn').addEventListener('click', setAlarm); // on click event listener for the button
 
         function setAlarm(){
-            // console.log('its clicked');
-            let time = new Date();
-            let hours = time.getHours();
-            let seconds = time.getSeconds();
+            console.log('its clicked');
+            
            
            let audio = document.getElementById('audio'); // grab audio tag
            audio.src = './alarm.mp3';                      // set audio src
                audio.loop = true;                         // set audio to loop
+
             const e = document.getElementById('option');
-            let alarm = e.options[e.selectedIndex].text;
-            const s = document.getElementById('option2');
-            let alarmS = s.options[s.selectedIndex].text;
-            if(alarm == hours && alarmS == seconds) {
-                
+            const h = e.options[e.selectedIndex].text;
+            const b = document.getElementById('seconds');
+            const s = b.options[b.selectedIndex].text;
+            const setTime = h + ':' + s;
+
+            setInterval(() => {
+                const time = new Date();
+                const hours = time.getHours();
+                const seconds = time.getSeconds();
+                const currentTime = hours + ':' + seconds;
+                console.log('Timer started ' + setTime + ' ' + currentTime)
+            if(setTime == currentTime) {
+               
                 audio.play();
-                console.log('time is right');
+                console.log('time is right' + e + ' ' + b  );
             }
+            },1000)
         };
 
-        setInterval(setAlarm, 1000);
+        
 
         document.getElementById('stop').addEventListener('click', stop);
 
