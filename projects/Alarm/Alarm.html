@@ -153,8 +153,8 @@
             setInterval(() => {
                 const time = new Date();
                 const hours = time.getHours();
-                const seconds = time.getSeconds();
-                const currentTime = hours + ':' + seconds;
+                const minutes = time.getMinutes();
+                const currentTime = hours + ':' + minutes;
                 console.log('Timer started ' + setTime + ' ' + currentTime)
             if(setTime == currentTime) {
                
