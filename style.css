@@ -45,19 +45,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-ul {
+
+nav {
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-   
-  }
+    
+}
+.content {
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+.content a {
+    display: block;
+
+}
+.content a:hover  {
+    background-color: #445eee;
+}
+.btn {
+    background-color: #445eee;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+.container:hover .content {
+    display: block;
+}
   
   li {
     float: left;
+    display: inline-flex;
+
   }
   
-  li a {
+  a {
     display: block;
     color: white;
     text-align: center;
@@ -68,7 +96,10 @@ ul {
   li a:hover {
     background-color: #445eee;
   }
+    
 
+
+    
 #links {
     float: right;
 
@@ -133,22 +164,7 @@ h1:hover {
     color:lightgoldenrodyellow;
     text-align: center;
 }
-div.form {
-    margin:200px;
-    display: block;
-    text-align: center;
-}
-form {
-    color: white;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-textarea {
-    width: 300px;
-    height: 300px;
-}
+
 
 
 
