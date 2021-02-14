@@ -25,9 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url('./images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: black;
 }
 ol, ul {
@@ -75,7 +72,7 @@ h1 {
     padding: 0;
     margin-right: 0;
     margin-bottom: 0;
-    
+    width: 80%;
 }
 
 aside {
@@ -241,7 +238,7 @@ a {
     margin-left: 320px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     body{
         font-size: 20px;
     }
