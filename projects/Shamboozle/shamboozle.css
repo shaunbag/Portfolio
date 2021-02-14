@@ -46,7 +46,7 @@ table {
 body {
     
     background-color:black;
-    font-family: TeleTekst;
+    font-family: 'Press Start 2P', cursive;
     
 }
 
@@ -72,7 +72,7 @@ h1 {
     padding: 0;
     margin-right: 0;
     margin-bottom: 0;
-    width: 80%;
+    width: 100%;
 }
 
 aside {
@@ -131,7 +131,7 @@ aside {
     color: white;
     text-align: center;
     font-size: 50px;
-    margin-top: 0;
+    margin-top: 10px;
     padding: 10px;
     margin-right: 0;
     margin-bottom: 0;
@@ -150,7 +150,7 @@ aside {
 
 #redbtn {
     
-    font-size: 40px;
+    font-size: 25px;
     background-color: red;
     color: red;
     text-decoration: none;
@@ -161,7 +161,7 @@ aside {
 
 #greenbtn{
 
-    font-size: 40px;
+    font-size: 25px;
     background-color: green;
     color: green;
     text-decoration: none;
@@ -170,7 +170,7 @@ aside {
 
 #bluebtn{
 
-    font-size: 40px;
+    font-size: 25px;
     background-color: blue;
     color: blue;
     text-decoration: none;
@@ -179,7 +179,7 @@ aside {
 
 #yellowbtn{
 
-    font-size: 40px;
+    font-size: 25px;
     background-color: yellow;
     color: yellow;
     text-decoration: none;
@@ -194,7 +194,7 @@ aside {
 
 #qst {
 
-    font-size: 60px;
+    font-size: 55px;
     color: black;
     background-color: white;
     padding: 10px;
@@ -207,8 +207,8 @@ aside {
 #ans{
 
     color:white;
-    font-size: 70px;
-    margin-left:220px;
+    font-size: 68px;
+    margin-left: 220px;
     margin-top: 10px;
     margin-bottom: 20px;
 
@@ -217,25 +217,41 @@ aside {
 #colqst{
 
     float: left;
-    margin-left: 250px;
+    margin-left: 50px;
     margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 nav{
     text-align: center;
-    margin: 40px;
+    margin: 30px;
     color: white;
     
 }
 
 a {
-
-    margin-right: 250px;
+    margin-top: 10px;
+    margin-right: 150px;
 }
 
 #wrong {
 
     margin-left: 320px;
+}
+
+#winmage{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#win {
+    background-color: white;
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-size: large;
+    padding: 30px;
 }
 
 @media only screen and (max-width: 800px) {
