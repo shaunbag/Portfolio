@@ -187,6 +187,10 @@ h1:hover {
     font-size: 18px;
     opacity: 0.75;
 }
+#about:hover{
+    box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px  #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
+    animation: colorcycle 5s;
+}
 #quote{
     background-color: none;
     margin-top: 200px;
