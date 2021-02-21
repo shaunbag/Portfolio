@@ -97,7 +97,7 @@ aside {
 #welc {
     
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     
     
 }
@@ -200,17 +200,41 @@ aside {
 
 
 }
+.answers{
+    margin-bottom: 130px;
+}
 
-#ans{
+.ans {
+    color: white;
+    font-size: 3em;
+}
 
+.box {
+    float: left;
+    height: 40px;
+    width:  50px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    margin-left: 50px;
     color:white;
-    font-size: 40px;
-    margin-left: 220px;
-    margin-top: 10px;
-    margin-bottom: 120px;
-    line-height: 45px;
+    clear: both;
 
 }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  .yellow {
+    background-color: yellow;
+  }
 
 #colqst{
 
