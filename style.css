@@ -66,7 +66,7 @@ nav {
 .subnavbtn .subnavbtn2 .subnavbtn3 a{
     border: none;
     background-color: black;
-    color: blanchedalmond;
+    color: white;
     padding: 300px;
 }
 
@@ -75,6 +75,7 @@ nav {
     position: absolute;
     display: none;
     flex-direction: row;
+    opacity: 0.7;
 }
 .content a {
     display: block;
@@ -88,6 +89,7 @@ nav {
     position: absolute;
     margin-left: 150px;
     margin-top: -65px;
+    opacity: 0.7;
 }
 
 .minicontainer2:hover .subnav2{
@@ -95,6 +97,7 @@ nav {
     position: absolute;
     margin-left: 150px;
     margin-top: -112px;
+    opacity: 0.7;
 }
 .btn {
     background: rgb(32,106,244);
