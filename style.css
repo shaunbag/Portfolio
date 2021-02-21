@@ -86,15 +86,15 @@ nav {
 .minicontainer:hover .subnav{
     display: block;
     position: absolute;
-    margin-left: 265px;
-    margin-top: -50px;
+    margin-left: 150px;
+    margin-top: -65px;
 }
 
 .minicontainer2:hover .subnav2{
     display: block;
     position: absolute;
-    margin-left: 265px;
-    margin-top: -50px;
+    margin-left: 150px;
+    margin-top: -112px;
 }
 .btn {
     background: rgb(32,106,244);
@@ -220,3 +220,4 @@ h1:hover {
     }
 
 }
+
