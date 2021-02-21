@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -67,12 +67,9 @@ h1 {
     text-align: left;
     color: yellow;
     font-family: 'Press Start 2P', cursive;
-    font-size: 180px;
-    margin-top: 0;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 100%;
+    font-size: 6em;
+    
+    
 }
 
 aside {
@@ -111,7 +108,7 @@ aside {
     
 }
 
-#ft {
+.ft {
     
     border: solid 10px red;
     text-align: center;
@@ -122,7 +119,7 @@ aside {
     padding: 20px;
     margin-right: 0;
     margin-bottom: 0;
-    
+    display: flexbox;
 }
 
 #ftdig {
@@ -207,10 +204,11 @@ aside {
 #ans{
 
     color:white;
-    font-size: 67px;
+    font-size: 40px;
     margin-left: 220px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
+    line-height: 45px;
 
 }
 
@@ -231,7 +229,7 @@ nav{
 
 a {
     margin-top: 10px;
-    margin-right: 150px;
+    margin-right: 20px;
 }
 
 #wrong {
@@ -254,27 +252,10 @@ a {
     padding: 30px;
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    
     body{
-        font-size: 20px;
+        font-size: 30px;
     }
-    h1{
-        font-size: 100px;
-    }
-    p {
-        font-size: 10px;
-    }
-    img #wrong{
-        margin-left: 0;
-        width: 200px;
-    }
-    #qst{
-        font-size: small;
-    }
-    #ans {
-        font-size: 10px;
-    }
-    #colqst {
-        margin-left: 50px;
-    }
+    
 }
