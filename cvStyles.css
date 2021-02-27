@@ -78,6 +78,15 @@ h1{
     
 }
 
+h2 {
+    color:rgb(87, 214, 172);
+    text-align: center;
+}
+
+h3 {
+    color:burlywood;
+}
+
 a{
     text-decoration: none;
     color: rgb(120, 120, 131);
