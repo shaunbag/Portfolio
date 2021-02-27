@@ -197,9 +197,10 @@ h1:hover {
 }
 #quote{
     background-color: none;
-    margin-top: 200px;
+    margin-top: 150px;
     color:lightgoldenrodyellow;
     text-align: center;
+    font-size: 2em;
 }
 
 

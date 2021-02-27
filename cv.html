@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cvStyles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shaun Mcelhinney CV</title>
 </head>
 <body>
-    <h1><a href="./index.html">Shaun Mcelhinney</a> <br> Curriculum Vitae</h1>
+    <h1><a href="./index.html">Shaun Mcelhinney</a><br> Curriculum Vitae</h1>
     
-<div class="content">
+<div class="content animate__animated animate__slideInRight">
     <h2>Contact</h2>
     <p> Nationality: British <br>
         Based in: Norwich UK<br>
@@ -19,7 +21,7 @@
         Link: <a href="https://www.linkedin.com/in/shaun-mcelhinney-5a849a1b7/">linkedin/shaunmcelhinney</a><br>
     </p>
 </div>
-<div class="content">
+<div class="content animate__animated animate__slideInLeft">
 
     <p> - Ambitious and Driven professional with experience across clinical care, customer service and team based working. <br><br>
         - Always looking to learn new skills, take on extra responsibilities, and grow professionally.<br><br>
@@ -30,7 +32,7 @@
 </div>
 
 <div>
-    <div class="content">
+    <div class="content animate__animated animate__slideInRight">
     <h2>Experience</h2> 
             
     <h3>Physiotherapy Assistant</h3> 
@@ -66,7 +68,7 @@
         </p> 
     </div>
 
-    <div class="content">
+    <div class="content animate__animated animate__slideInLeft">
     <h2>Education</h2>
 
     <p>jQuery, Git, Command Line Modules <br>
@@ -103,7 +105,7 @@
     Achieved overall - Merit, Distinction for Musical Performance</p>
     </div>
 </div>
-<div class="content">
+<div class="content animate__animated animate__slideInRight">
   <h2>Skills</h2> 
     <ul>      
         <li>Teamwork </li>          
@@ -121,7 +123,7 @@
     </ul>
 </div>
 
-<div class="content">
+<div class="content animate__animated animate__slideInLeft">
 <h2>Achievements</h2> 
  
         <p>-Completetion of the Mongol Rally 2010 - a charity rally organised by the adventurists raising money for the mercy corps<br> 
@@ -131,5 +133,11 @@
         -Becomming a Father to a beautiful baby girl in 2017</p>
 </div>
     
+<script>
+    $(document).ready(function(){
+        $(".content").hide().fadeIn(1000);
+    })
+</script>
+
 </body>
 </html>

@@ -46,7 +46,6 @@ table {
 }
 
 .content{
-
     text-align: left;
     background-color:  #333333;
     color:lightgoldenrodyellow;
@@ -57,14 +56,12 @@ table {
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 10px 5px rgb(2, 61, 150);
+    box-shadow: 10px 5px rgb(96, 2, 150);
     font-size: 18px;
     opacity: 0.75;
 }
 
-.content:hover{
-    animation: colorcycle 5s;
-}
+
 h1{
     text-align: center;
     font-family: sans-serif;
@@ -73,7 +70,7 @@ h1{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,106,232,1) 100%);
     color: rgb(255, 255, 255);
-    border-bottom: black 5px solid;
+    border-bottom: rgb(92, 25, 199) 5px solid;
     margin-bottom: 30px;
     
 }
