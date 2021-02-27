@@ -62,6 +62,7 @@ nav {
 .subnav2 {
     display: none;
     background-color: black;
+    width: 150px;
 }
 .subnavbtn .subnavbtn2 .subnavbtn3 a{
     border: none;
