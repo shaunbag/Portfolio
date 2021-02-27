@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url('./images/background.jpg');
+    background-image: url('./images/background2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -197,7 +197,7 @@ h1:hover {
 }
 #quote{
     background-color: none;
-    margin-top: 150px;
+    margin-top: 50px;
     color:lightgoldenrodyellow;
     text-align: center;
     font-size: 2em;
