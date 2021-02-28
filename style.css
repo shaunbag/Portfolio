@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url('./images/background2.jpg');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -144,7 +144,8 @@ h1{
     padding: 20px;
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,106,232,1) 100%);
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
+    opacity: 0.6;
 }
 h1:hover {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
@@ -190,14 +191,12 @@ h1:hover {
     box-shadow: 10px 5px rgb(2, 61, 150);
     font-size: 18px;
     opacity: 0.75;
-}
-#about:hover{
     box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px  #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
     animation: colorcycle 5s;
 }
 #quote{
     background-color: none;
-    margin-top: 50px;
+    margin-top: 70px;
     color:lightgoldenrodyellow;
     text-align: center;
     font-size: 2em;
