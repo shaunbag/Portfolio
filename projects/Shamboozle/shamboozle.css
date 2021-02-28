@@ -186,7 +186,8 @@ aside {
 #bamberqst1 {
 
     float:left;
-
+    background-color: black;
+    padding-bottom: 20px;
 }
 
 #qst {
