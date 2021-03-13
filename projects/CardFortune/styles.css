@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url('./images/texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: antiquewhite;
+
+}
+
+h2 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.cards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#cardOne {
+    float: left;
+}
+#cardTwo {
+    float: right;
+}
+#cardThree {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.reading {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width:60%;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30%;
+    font-size: large;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        width: 50px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

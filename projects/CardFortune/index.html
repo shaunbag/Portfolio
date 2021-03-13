@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Fortune?!</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png"/> <!--link to favicon icon-->
+</head>
+<body>
+
+    <h1>The Standard Deck Fortune Teller</h1>
+    <h2>Click each card for Reading</h2>
+
+    <!--Cards drawn-->
+    
+    <div class="cards">
+        <img id="cardOne">
+            <p id="deckOne" style="display:none"></p>
+            <p id="valueOne" style="display:none"></p>
+        <img id="cardTwo">
+            <p id="deckTwo" style="display:none"></p>
+            <p id="valueTwo" style="display:none"></p>
+        <img id="cardThree">
+            <p id="deckThree" style="display:none"></p>
+            <p id="valueThree" style="display:none"></p>
+    </div>
+
+    <!--Current Reading-->
+
+    <div class="reading">
+        <h2 id="tense"></h2>
+        <p id="fortune">Keywords</p>
+        <p id="special">Special Characters</p>
+        <p id="numbers">Numbers Meaning</p>
+    </div>
+
+<script>
+
+// Generate 3 random cards from deck
+
+const cards = async() => {
+    const url = 'https://deckofcardsapi.com/api/deck/new/draw/?count=3';  // http header call to deckofcardsapi
+    const response = await fetch(url);
+    try {
+        if(response.ok) {
+        responseJson = await response.json();
+        console.log(responseJson);
+            document.getElementById('cardOne').src = responseJson.cards[0].image; // set img src to each card in returned array
+            document.getElementById('deckOne').innerHTML = responseJson.cards[0].suit;
+            document.getElementById('valueOne').innerHTML = responseJson.cards[0].value;
+
+            document.getElementById('cardTwo').src = responseJson.cards[1].image;
+            document.getElementById('deckTwo').innerHTML = responseJson.cards[1].suit;
+            document.getElementById('valueTwo').innerHTML = responseJson.cards[1].value;
+
+            document.getElementById('cardThree').src = responseJson.cards[2].image;
+            document.getElementById('deckThree').innerHTML = responseJson.cards[2].suit;
+            document.getElementById('valueThree').innerHTML = responseJson.cards[2].value;
+        return responseJson
+    }
+
+    throw new Error ('fetch failed')
+    }catch(error) {
+        console.log(error.message);
+    }
+
+};
+
+cards(); // call to cards function
+
+// readings
+
+const Ace = "Beginnings, Opportunity; Missed Opportunity, Bad Timing"
+const Two = "Balance, Cooperation; Disharmony"
+const Three = "Connection, Sharing; Loss"
+const Four = "Stability, Foundation; Instability"
+const Five = "Activity; Disturbance"
+const Six = "Flow, Pattern, Communication; Ignorance"
+const Seven = "Mystery, Change; Stagnation"
+const Eight = "Movement, Harmony/Health, Time; Imbalance"
+const Nine = "Growth, Wishes; Disappointment, Idealism"
+const Ten = "Completion"
+
+
+const Jacks = "The Jacks represent children and young people. Therefore the Jack can denote something small or the start of something new. In the days before the invention of the telephone, young boys were employed as messengers, so the Jacks can be the messengers for their suits. Jacks can also represent thoughts, so there is the idea of movement connected with these cards. Young person of either sex usually under 35 years old. Can represent a child.  May also represent an older person who is immature, or just young at heart."
+const Queens ="The Queens represent women, feminine things,  and the divine feminine principle. Queens represent motherhood and love, and they are nurturing, creative, receptive and introspective. The Queens denote growth and personal power. They bring  emotions and intuition and healing to their respective suits. Traditionally a mature female, but the queen may represent a female of any age. "
+const Kings = "The Kings are grown men, and are the highest ranking court card. They denote mastery, authority, control and leadership. The Kings are protective and commanding, but they can be demanding, possessive, and even aggressive and overbearing, depending on their suit and surrounding cards. Male, usually mature, or in a position of authority.  May also represent a younger man who is mature for his age, or is burdened by responsibilities."
+const Spades = "Powerful, intense, demanding, controlling, secretive, possessive, charming, mysterious, calculating, detached."
+const Hearts = "Emotional, creative, romantic, compassionate, generous, sensitive, nurturing, dependable, protective, moody."
+const Diamonds = "Independent, extravagant, impulsive, impatient, optimistic, dynamic, restless, analytical, intelligent, high strung."
+const Clubs = "Practical, friendly, reliable, trustworthy, helpful,  ambitious, enthusiastic, sensible, stable, stubborn."
+
+
+//reading functions
+
+
+const reading = (deck) => {
+    const card = document.getElementById(deck).innerHTML;
+    console.log(card)
+    if( card == 'HEARTS') {
+        document.getElementById('fortune').innerHTML = 'Hearts represent - ' + Hearts;        
+    } else if (card == 'CLUBS'){
+        document.getElementById('fortune').innerHTML = 'Clubs represent - ' + Clubs;
+    } else if (card == 'DIAMONDS') {
+        document.getElementById('fortune').innerHTML = 'Diamonds represent - ' + Diamonds;
+    } else {
+        document.getElementById('fortune').innerHTML = 'Spades represent - ' + Spades;
+    }
+};
+
+const special = (value) => {
+    val = document.getElementById(value).innerHTML;
+    console.log(val)
+    if(val == 'KING') {
+        document.getElementById('special').innerHTML = Kings;
+    } else if (val == 'QUEEN') {
+        document.getElementById('special').innerHTML = Queens;
+    } else if (val == 'JACK'){
+        document.getElementById('special').innerHTML = Jacks;
+    } else {
+        document.getElementById('special').innerHTML = ''
+    }
+};
+
+const numbers = (number) => {
+    const num = document.getElementById(number).innerHTML;
+    switch (num) {
+        case 'ACE':
+            document.getElementById('numbers').innerHTML = Ace;
+            break;
+        case '2':
+            document.getElementById('numbers').innerHTML = Two;
+            break;
+        case '3':
+            document.getElementById('numbers').innerHTML = Three;
+            break;
+        case '4':
+            document.getElementById('numbers').innerHTML = Four;
+            break;
+        case '5':
+            document.getElementById('numbers').innerHTML = Five;
+            break;
+        case '6':
+            document.getElementById('numbers').innerHTML = Six;
+            break;
+        case '7':
+            document.getElementById('numbers').innerHTML = Seven;
+            break;
+        case '8':
+            document.getElementById('numbers').innerHTML = Eight;
+            break;
+        case '9':
+            document.getElementById('numbers').innerHTML = Nine;
+            break;
+        case '10':
+            document.getElementById('numbers').innerHTML = Ten;
+            break;
+        default:
+            document.getElementById('numbers').innerHTML = ''
+
+    }
+
+}
+
+document.getElementById('cardOne').addEventListener('click', function() {
+    document.getElementById('tense').innerHTML = "Past";
+    reading('deckOne');
+    special('valueOne');
+    numbers('valueOne');
+});
+
+document.getElementById('cardThree').addEventListener('click', function() {
+    document.getElementById('tense').innerHTML = "Present";
+    reading('deckThree');
+    special('valueThree');
+    numbers('valueThree');
+});
+
+document.getElementById('cardTwo').addEventListener('click', function() {
+    document.getElementById('tense').innerHTML = "Future";
+    reading('deckTwo');
+    special('valueTwo');
+    numbers('valueTwo');
+});
+
+</script>
+</body>
+</html>
