@@ -46,6 +46,17 @@ table {
 	border-spacing: 0;
 }
 
+h2 {
+    color: blanchedalmond;
+    text-align: center;
+    margin: 5% 40% 3%;
+    font-size: 2em;
+    border-radius: 20px;
+    background-color: black;
+    padding: 1%;
+    opacity: 0.5;
+}
+
 nav {
     display: flexbox;
     justify-content: space-between;
@@ -183,9 +194,9 @@ h1:hover {
     text-align: left;
     background-color:  #333333;
     color:lightgoldenrodyellow;
-    width: 700px;
+    width: 70%;
     display: block;
-    margin-top: 210px;
+    margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -210,6 +221,23 @@ h1:hover {
     font-size: 2em;
 }
 
+.imagesProjects {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.projLink {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: black;
+    color:blanchedalmond;
+    opacity: 0.8;
+}
 
 
 
@@ -233,3 +261,16 @@ h1:hover {
 
 }
 
+@media only screen and (max-width: 800px) {
+    .imagesProjects {
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projLink {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
