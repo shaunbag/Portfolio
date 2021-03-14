@@ -87,7 +87,7 @@ nav {
     position: absolute;
     display: none;
     flex-direction: row;
-    opacity: 0.7;
+    
 }
 .content a {
     display: block;
@@ -101,7 +101,6 @@ nav {
     position: absolute;
     margin-left: 150px;
     margin-top: -65px;
-    opacity: 0.7;
 }
 
 .minicontainer2:hover .subnav2{
@@ -109,7 +108,6 @@ nav {
     position: absolute;
     margin-left: 150px;
     margin-top: -112px;
-    opacity: 0.7;
     z-index: 1;
 }
 .btn {
@@ -163,7 +161,7 @@ h1:hover {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
 }
 #nav {
-    opacity: 0.75;
+   
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%);
 
@@ -233,10 +231,12 @@ h1:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
+    margin-bottom: 5%;
     padding: 1%;
     background-color: black;
     color:blanchedalmond;
     opacity: 0.8;
+
 }
 
 
@@ -261,16 +261,3 @@ h1:hover {
 
 }
 
-@media only screen and (max-width: 800px) {
-    .imagesProjects {
-        align-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .projLink {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
