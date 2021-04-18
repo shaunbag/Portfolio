@@ -25,10 +25,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url('./images/background.jpg');
+    /*background-image: url('./images/background.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: white;
 }
 
 blockquote, q {
@@ -243,11 +243,10 @@ h3 {
     margin-top: 1%;
     margin-bottom: 5%;
     padding: 1%;
-    background-color: black;
+    background-color: rgb(27, 27, 29);
     border-radius: 15px;
     color:blanchedalmond;
-    opacity: 0.8;
-    max-width: 65%;
+    width: 75%;
 }
 
 
@@ -271,4 +270,6 @@ h3 {
     }
 
 }
+
+
 
