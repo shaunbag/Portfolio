@@ -25,10 +25,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    /*background-image: url('./images/background.jpg');*/
+    background-image: url('./images/background\ ocean.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: rgb(9, 59, 73);
 }
 
 blockquote, q {
@@ -56,31 +56,11 @@ h2 {
     opacity: 0.5;
 }
 
-nav {
-    display: flexbox;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;    
+h4 {
+    float: right;
+    margin-left: auto;
+    color: rgb(58, 58, 223);
 }
-.subnav {
-    background-color: black;
-    display: none;
-}
-.subnav2 {
-    display: none;
-    background-color: black;
-    width: 150px;
-}
-.subnavbtn .subnavbtn2 .subnavbtn3 a{
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 300px;
-}
-
 .content {
     background-color: black;
     position: absolute;
@@ -95,20 +75,7 @@ nav {
     background: rgb(32,106,244);
     background: linear-gradient(90deg, rgba(32,106,244,1) 15%, rgba(0,0,0,1) 100%);
 }
-.minicontainer:hover .subnav{
-    display: block;
-    position: absolute;
-    margin-left: 150px;
-    margin-top: -65px;
-}
 
-.minicontainer2:hover .subnav2{
-    display: block;
-    position: absolute;
-    margin-left: 150px;
-    margin-top: -112px;
-    z-index: 1;
-}
 .btn {
     background: rgb(32,106,244);
     background: linear-gradient(90deg, rgba(32,106,244,1) 15%, rgba(0,0,0,1) 100%);
@@ -147,19 +114,7 @@ nav {
     float: right;
 
 }
-h1{
-    text-align: center;
-    font-family: 'VT323', monospace;
-    font-size: 3em;
-    padding: 20px;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,106,232,1) 100%);
-    color: rgb(240, 240, 240);
-    opacity: 0.6;
-}
-h1:hover {
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #181cff, 0 0 30px #1842ff, 0 0 40px #187cff, 0 0 55px #1884ff, 0 0 75px #18c9ff, 2px -23px 2px rgba(37,56,206,0);
-}
+
 
 h3 {
     text-align: center;
@@ -252,24 +207,7 @@ h3 {
 
 
 
-@keyframes colorcycle{
-    0% {
-        filter:hue-rotate(0deg)
-    }
-    25% {
-        filter:hue-rotate(90deg)
-    }
-    50% {
-        filter:hue-rotate(180deg)
-    }
-    75% {
-        filter:hue-rotate(270deg)
-    }
-    100% {
-        filter:hue-rotate(360deg)
-    }
 
-}
 
 
 

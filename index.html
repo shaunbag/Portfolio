@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
@@ -16,50 +18,32 @@
 
         
 
-            <h1>SHAUN MCELHINNEY.COM </h1>
+            
 
-        <nav id="nav"> 
-
+        <nav id="nav">                  
                    
-                    <div class="container" style="float: left;">
-                        <button class="fa fa-bars btn"></button>
-                        <div class="content">  
-                            <div class="minicontainer">                    
-                            <a class="subnavbtn">HTML, JavaScript<br> and CSS Projects</a>
-                                <div class="subnav">
-                                    <a href="./projects/Nasa/nasa1.html">Nasa Picture of The Day API</a>
-                                    <a href="projects/Alarm/Alarm.html">Alarm Clock</a>                                                                      
-                                    <a href="./projects/Shamboozle/Shamboozle.html">SHAMBOOZLE</a>  
-                                    <a href="./projects/CardFortune/index.html">Fortune Teller</a>                                  
-                                </div>
-                            </div>
-                            <div class="minicontainer2">
-                            <a class="subnavbtn2">React Apps</a>
-                                <div class="subnav2">
-                                    <a href="https://competent-rosalind-83043b.netlify.app">Weather App</a>
-                                    <a href="https://keen-roentgen-c9d290.netlify.app/">Todo List</a>
-                                    <a href="https://happy-engelbart-17836f.netlify.app/">Laser Guided Job Seeker</a>
-                                    <a href="https://gracious-saha-699d1c.netlify.app/">Spellbook</a>
-                                    <!--<a href="">Instagram App</a>
-                                    <a href="">Boss Machine</a>-->
-                                </div>
-                            </div>
-                            
-                            
-
-                        </div>
-                        
-                                  
-                    </div>
-                
-                <ul id="links">
-                        <li><a href="cv.html" >Curriculum Vitae</a></li>
-                        <li><a href="mailto:shaunbag@hotmail.com">Contact</a></li>
-                        <li><a href="https://github.com/shaunbag" class="fa fa-github-square" ></a></li>
-                        <li><a href="https://www.linkedin.com/in/shaun-mcelhinney-5a849a1b7/" class="fa fa-linkedin"></a></li>
-                        
+                <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link" href="cv.html" >Curriculum Vitae</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:shaunbag@hotmail.com">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./projects/Nasa/nasa1.html">Nasa Picture of The Day API</a></li>
+                              <li><a class="dropdown-item" href="projects/Alarm/Alarm.html">Alarm Clock</a></li>
+                              <li><a class="dropdown-item" href="./projects/Shamboozle/Shamboozle.html">SHAMBOOZLE</a></li>
+                              <li><a class="dropdown-item" href="./projects/CardFortune/index.html">Fortune Teller</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="https://competent-rosalind-83043b.netlify.app">Weather App</a></li>
+                              <li><a class="dropdown-item" href="https://keen-roentgen-c9d290.netlify.app/">Todo List</a></li>
+                              <li><a class="dropdown-item" href="https://happy-engelbart-17836f.netlify.app/">Laser Guided Job Seeker</a></li>
+                              <li><a class="dropdown-item" href="https://gracious-saha-699d1c.netlify.app/">Spellbook</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a href="https://github.com/shaunbag" class="fa fa-github-square nav-link" ></a></li>
+                        <li class="nav-item"><a href="https://www.linkedin.com/in/shaun-mcelhinney-5a849a1b7/" class="fa fa-linkedin nav-link"></a></li>
+                        <h4>Shaun-Mcelhinney.com</h4>
                 </ul>                  
-
+                
         </nav>
 
         <div id="about">
@@ -68,7 +52,7 @@
 
             <!--<img id="photo" src="./images/20210206_104918.jpg" >-->
 
-            <p class="about animate__animated animate__zoomIn"> Welcome Programs!! this is my site created entirely by me with HTML5, CSS3, JavaScript, React, jQuery and Gitpages <br>
+            <p class="about animate__animated animate__zoomIn"> Welcome Programs!! This is my site created with HTML5, CSS3, JavaScript, React, jQuery and Gitpages <br>
                 I hope you like what you see, i've been studying web development for about 8-9 months now and this is some of the bits i've learned... <br><br>
                 Hopefully there will be some more "complex" projects coming so watch this space, for now its a start, hit me up if you want to give me a job!!...no really...
                 
@@ -76,6 +60,11 @@
             
 
         </div>
+
+        <p class="quote animate__animated animate__backInDown">
+            “Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.”
+             <br>   ― Isaac Asimov
+        </p>
 
         <h2>Projects</h2>
 
@@ -159,16 +148,16 @@
             </div>
         </div>
 
-        <p class="quote animate__animated animate__backInDown">
-            “Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in.”
-                ― Isaac Asimov
-        </p>
-              
+        <p>&copy; 2021 Shaun-Mcelhinney</p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>     
 <script>
+
+    
+
     $(document).ready(function(){
         $('.projLink').hide().fadeIn(3000)
     })
 </script>
-</body>
+</body> 
 </html>
 
