@@ -26,13 +26,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-image: url('./images/background\ ocean.jpg');
-    background-size: cover;
     
     color: blanchedalmond;
 }
 
 p {
-    color: blanchedalmond;
+    color: black;
 }
 
 table {
@@ -52,6 +51,10 @@ h2 {
     opacity: 0.5;
 }
 
+.dropdown-item {
+    color: black !important;
+}
+
 h4 {
     float: right;
     margin-left: auto;
@@ -61,7 +64,7 @@ h4 {
   
 a {
     display: block;
-    color: white;
+    color: blanchedalmond !important;
     text-align: center;
     padding: 16px;
     text-decoration: none;
