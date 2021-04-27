@@ -27,25 +27,21 @@ body {
 	line-height: 1;
     background-image: url('./images/background\ ocean.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(9, 59, 73);
+    
+    color: blanchedalmond;
 }
 
-blockquote, q {
-	quotes: none;
+p {
+    color: blanchedalmond;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 h2 {
-    color: rgb(69, 236, 241);
+    color: blanchedalmond;
     text-align: center;
     margin: 1.5% 30% 3%;
     font-size: 2em;
@@ -59,43 +55,11 @@ h2 {
 h4 {
     float: right;
     margin-left: auto;
-    color: rgb(58, 58, 223);
-}
-.content {
-    background-color: black;
-    position: absolute;
-    display: none;
-    flex-direction: row;
-    
-}
-.content a {
-    display: block;
-}
-.content a:hover  {
-    background: rgb(32,106,244);
-    background: linear-gradient(90deg, rgba(32,106,244,1) 15%, rgba(0,0,0,1) 100%);
+    color: blanchedalmond;
 }
 
-.btn {
-    background: rgb(32,106,244);
-    background: linear-gradient(90deg, rgba(32,106,244,1) 15%, rgba(0,0,0,1) 100%);
-    height: 50px;
-    width: 90px;
-    display: inline-block;
-    border: none;
-}
-.container:hover .content {
-    display: block;
-}
   
-#links li {
-    float: left;
-    display: inline-flex;
-    padding-bottom: 0;
-    margin: 0;
-  }
-  
-  a {
+a {
     display: block;
     color: white;
     text-align: center;
@@ -103,27 +67,15 @@ h4 {
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color: #445eee;
-  }
-    
-
-
-    
-#links {
-    float: right;
-
-}
-
-
+   
 h3 {
     text-align: center;
     font-size: 2em;
 }
 #nav {
    
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%);
+    background: rgb(97, 96, 96);
+    background: linear-gradient(90deg, rgb(56, 55, 55) 0%, rgb(72, 89, 114) 50%, rgba(56, 55, 55) 100%);
 
 }
 #photo {
@@ -151,7 +103,7 @@ h3 {
     text-indent: 30px;
     text-align: left;
     background-color:  #333333;
-    color:lightgoldenrodyellow;
+    color:blanchedalmond;
     width: 70%;
     display: block;
     margin-top: 1.5%;
@@ -159,9 +111,9 @@ h3 {
     margin-right: auto;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 10px 5px rgb(2, 61, 150);
+    box-shadow: 10px 5px rgb(107, 156, 230);
     font-size: 18px;
-    opacity: 0.75;
+    opacity: 0.9;
     z-index: -1;
     position: relative;    
 }
@@ -172,8 +124,8 @@ h3 {
 
 .quote{
     background-color: none;
-    margin-top: 70px;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
     color:rgb(15, 15, 8);
     text-align: center;
     font-size: 2em;
@@ -196,12 +148,13 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: 1%;
     background-color: rgb(27, 27, 29);
     border-radius: 15px;
     color:blanchedalmond;
     width: 75%;
+    opacity: 0.85;
 }
 
 
