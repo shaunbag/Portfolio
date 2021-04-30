@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url('./images/background\ ocean.jpg');
+    
     
     color: blanchedalmond;
 }
@@ -103,7 +103,6 @@ h3 {
 
 }
 .about{
-    text-indent: 30px;
     text-align: left;
     background-color:  #333333;
     color:blanchedalmond;
