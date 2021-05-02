@@ -89,6 +89,8 @@ a{
     color: rgb(146, 146, 158);
 }
 
+
+
 @keyframes colorcycle{
     0% {
         filter:hue-rotate(0deg)
