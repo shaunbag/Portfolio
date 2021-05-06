@@ -184,10 +184,10 @@ h3 {
 .skilltable {
     margin-left: auto !important;
     margin-right: auto !important; 
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 100px;   
 }
 
 td {
-    padding: 30px;
+    padding: 10px;
 }
