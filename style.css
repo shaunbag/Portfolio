@@ -24,8 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-    
+	line-height: 1;  
     
     color: blanchedalmond;
 }
@@ -111,7 +110,7 @@ h3 {
     color:blanchedalmond;
     width: 70%;
     display: block;
-    margin-top: 1.5%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -120,7 +119,8 @@ h3 {
     font-size: 18px;
     opacity: 0.9;
     z-index: -1;
-    position: relative;    
+    position: relative; 
+    font-size: larger;   
 }
 
 #about {
