@@ -118,8 +118,8 @@ function Circle(x, y, dx, dy, radius){  // create a circle object with own metho
 let circleArr = [];// array holding circle objects
 
 for(let i = 0; i < 17; i++){
-    var x = Math.random() * innerWidth;
-    var y = Math.random() * innerHeight;
+    var x = Math.random() * (innerWidth - radius * 2) + radius;
+    var y = Math.random() * (innerHeight - radius * 2) + radius;
     var dx = Math.random() * 4;
     var dy = Math.random() * 4;
     var radius = 50;
