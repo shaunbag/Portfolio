@@ -1,3 +1,4 @@
+
 const canvas = document.querySelector('canvas'); // select the canvas element and place it inside the canvas variable for later use
 
 
@@ -22,7 +23,7 @@ function Circle(x, y, dx, dy, radius){  // create a circle object with own metho
         context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false); // arc function created using the variables above
         context.strokeStyle = `rgb(0, 255, 0)`;
         context.lineWidth = 10; // width of circle
-        context.stroke();
+        context.stroke();+
         context.fill(); //filled circle
     }
 
@@ -62,6 +63,9 @@ function animate() { // the function 'Animate'
     for (i = 0; i < circleArr.length; i++){
         circleArr[i].update();// callig the object function update on each circle in the array
     }
+
+    
+
     
 }
 
