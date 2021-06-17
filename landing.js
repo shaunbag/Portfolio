@@ -7,6 +7,16 @@ canvas.height = window.innerHeight;
 
 const context = canvas.getContext('2d'); 
 
+const mouse = {
+    x: undefined,
+    y: undefined
+}
+
+window.addEventListener('mousemove', 
+function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+})
 
 //Animate circle
 
@@ -21,9 +31,10 @@ function Circle(x, y, dx, dy, radius){  // create a circle object with own metho
         
         context.beginPath();
         context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false); // arc function created using the variables above
-        context.strokeStyle = `rgb(0, 255, 0)`;
+        context.strokeStyle = `rgb(0, 200, 0)`;
         context.lineWidth = 10; // width of circle
-        context.stroke();+
+        context.stroke();
+        context.fillStyle = 'rgb(0, 0, 90)';
         context.fill(); //filled circle
     }
 
@@ -39,20 +50,32 @@ function Circle(x, y, dx, dy, radius){  // create a circle object with own metho
         this.x += this.dx; // increment x and y coordinates each time the animation function is called 
         this.y += this.dy;
 
+        if (mouse.x - this.x < 40 && mouse.x - this.x > -40 && mouse.y - this.y < 40 && mouse.y - this.y > -40){
+            this.dx = -this.dx;
+            this.dy = -this.dy;
+        } else {
+            this.dx = this.dx;
+            this.dy = this.dy;
+        }
+
+        
+
         this.draw();
     }
+
+    
 }
 
 
 
 let circleArr = [];// array holding circle objects
 
-for(let i = 0; i < 17; i++){
+for(let i = 0; i < 100; i++){
     var x = Math.random() * (innerWidth - radius * 2) + radius;
     var y = Math.random() * (innerHeight - radius * 2) + radius;
     var dx = Math.random() * 4;
     var dy = Math.random() * 4;
-    var radius = 50;
+    var radius = Math.random() * 5 + 1;
     circleArr.push(new Circle(x, y, dx, dy, radius))    
 }
 
