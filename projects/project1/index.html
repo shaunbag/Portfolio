@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="leaflet.js"></script>
+    <title>World Gazetteer</title>
+</head>
+<body>   
+      
+<!--Navigation component-->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                The World Gazetteer
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Instructions</a> 
+              <a class="nav-link active" aria-current="page" href="#">Links</a>
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!--Map component-->
+
+    <div id="mapid"></div>
+    
+
+
+<!--Modal overlay of map-->
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img id="flag" src="">
+            <h5 class="modal-title"><span class="countryName"></span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Country Name: <span class="countryName"></span></p>
+            <!--<p>Capital City: <span class="capital"></span></p>
+            <p>Languages Spoken: <span class="languages"></span></p>-->
+            <p>Latitude: <span class="lat"></span></p>
+            <p>Longitude: <span class="lng"></span></p>
+           <!-- <p>Population: <span class="pop"></span></p> -->
+          </div>
+          <div class="modal-footer">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>  
+    <script type="application/javascript" src="libs/js/map.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
